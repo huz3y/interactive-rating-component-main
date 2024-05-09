@@ -1,3 +1,18 @@
+/*  
+    0   - 325px:    small-phone
+    325 - 600px:    phone
+    600 - 900px:    Tablet(portrait)
+    900 - 1200px:   Tablet(landscape)
+    (1200 to 1800px is where our normal styles apply)
+    1800px +:       Big Desktop
+
+    $breakpoint argument choices:
+    -small-phone
+    -phone
+    -tab-port
+    -tab-land
+    -big-desktop
+*/
 :root {
   --color-primary: hsl(25, 97%, 53%);
   --color-white: hsl(0, 0%, 100%);
@@ -19,6 +34,31 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 81.25%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media only screen and (max-width: 20.3125em) {
+  html {
+    font-size: 37.5%;
+  }
 }
 
 body {
