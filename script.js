@@ -58,6 +58,10 @@ btn.addEventListener("mouseover", (e) => {
     btn.style.backgroundColor = "#fff";
     btn.style.color = "hsl(25, 97%, 53%)";
     btn.style.transition = "all .2s";
+    btn.style.cursor = "pointer";
+  }
+  if (!e.target.classList.contains("btn--active")) {
+    btn.style.cursor = "default";
   }
 });
 
