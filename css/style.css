@@ -127,7 +127,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 4rem;
+  padding: 3rem 3.5rem 3rem 3.5rem;
   transition: all 1s ease;
   backface-visibility: hidden;
 }
