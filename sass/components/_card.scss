@@ -62,8 +62,15 @@
   }
 
   &__rating-num {
+    cursor: pointer;
     background-color: var(--color-dark-blue);
     border-radius: 50%;
+
+    &:hover,
+    &:active {
+      background-color: var(--color-medium-grey);
+      color: var(--color-white);
+    }
 
     &:first-of-type {
       padding: 1.2rem 2.1rem;
@@ -83,12 +90,5 @@
     color: var(--color-primary);
     border-radius: 50px;
     padding: 0.5rem 2rem;
-  }
-
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-  &:hover &__side--back {
-    transform: rotateY(0);
   }
 }

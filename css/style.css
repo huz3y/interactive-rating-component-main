@@ -121,8 +121,13 @@ body {
   align-items: center;
 }
 .card__rating-num {
+  cursor: pointer;
   background-color: var(--color-dark-blue);
   border-radius: 50%;
+}
+.card__rating-num:hover, .card__rating-num:active {
+  background-color: var(--color-medium-grey);
+  color: var(--color-white);
 }
 .card__rating-num:first-of-type {
   padding: 1.2rem 2.1rem;
@@ -136,12 +141,6 @@ body {
   color: var(--color-primary);
   border-radius: 50px;
   padding: 0.5rem 2rem;
-}
-.card:hover .card__side--front {
-  transform: rotateY(-180deg);
-}
-.card:hover .card__side--back {
-  transform: rotateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */
